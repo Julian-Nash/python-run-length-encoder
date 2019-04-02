@@ -121,8 +121,6 @@ class RunLengthEncoder:
         else:
             mapping.append((character, count))
 
-        result = ""
-
         result = "".join(f"{str(count)}{character}" for character, count in mapping)
 
         return result
